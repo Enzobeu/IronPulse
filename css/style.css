@@ -348,6 +348,26 @@ a:focus {
   border: 4px solid #ffffff;
 }
 
+/* Style de base pour le bouton */
+.animated-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.3s ease; /* Animation fluide */
+  cursor: pointer;
+}
+
+/* Effet au survol */
+.animated-button:hover {
+  transform: scale(1.1); /* Grossit de 10% */
+}
+
 .us_section {
   background-image: url(../images/us-bg.jpg);
   background-size: cover;
@@ -438,6 +458,26 @@ a:focus {
 .heathy_section .btn-box a:hover {
   background-color: #ffffff;
   color: #000000;
+}
+
+/* Style de base pour le bouton */
+.btn-box {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.3s ease; /* Animation fluide */
+  cursor: pointer;
+}
+
+/* Effet au survol */
+.btn-box:hover {
+  transform: scale(1.1); /* Grossit de 10% */
 }
 
 .trainer_section {
