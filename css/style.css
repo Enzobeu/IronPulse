@@ -4,6 +4,59 @@ body {
   background-color: #ffffff;
 }
 
+/* Conteneur de chargement */
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212; /* Fond sombre */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 1.5s ease-out 2s forwards; /* Disparaît après 2 secondes */
+}
+
+/* Cercles */
+#loading .circle {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+/* Dégradé de timing pour les cercles */
+#loading .circle:nth-child(2) {
+  animation-delay: 0.3s;
+}
+#loading .circle:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Animation des cercles */
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animation pour masquer le conteneur */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .layout_padding {
   padding-top: 120px;
   padding-bottom: 120px;
