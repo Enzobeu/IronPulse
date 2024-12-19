@@ -529,6 +529,27 @@ a:focus {
   border-radius: 50px;
   margin-top: -25px;
 }
+/* Conteneur de la galerie d'images */
+.img-box {
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* Espacement entre les images */
+}
+
+/* Style de base pour les images */
+.img-box {
+  width: 100%; /* Ajuste la taille selon tes besoins */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Animation fluide */
+  cursor: pointer;
+}
+
+/* Effet au survol */
+.img-box:hover {
+  transform: scale(1.1); /* Zoom de 10% */
+  filter: brightness(1.2); /* Légèrement plus lumineux */
+}
 
 .contact_section {
   position: relative;
@@ -555,7 +576,7 @@ a:focus {
   align-items: center;
 }
 
-.contact_section .img-box img {
+.contact_section .img-box1 img {
   width: 100%;
 }
 
