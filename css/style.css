@@ -604,7 +604,7 @@ a:focus {
 .contact_section input {
   width: 100%;
   border: none;
-  background-color: #4a4545;
+  background-color: #ffffff;
   outline: none;
   color: #ffffff;
   margin-top: 25px;
@@ -685,7 +685,7 @@ a:focus {
 }
 
 .info_items {
-  position: relative;
+  position: relative;   
 }
 
 .info_items a {
