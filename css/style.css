@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 999;
   animation: fadeOut 1.5s ease-out 2s forwards;
   /* Disparaît après 2 secondes */
 }
@@ -540,6 +540,7 @@ a:focus {
   border-radius: 50px;
   margin-top: -25px;
 }
+
 /* Conteneur de la galerie d'images */
 .img-box {
   display: flex;
